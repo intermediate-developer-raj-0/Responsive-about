@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsevie card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Nunito+Sans:opsz,wght@6..12,900&family=Poppins:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Mulish', sans-serif;
+        }
+
+        *::selection {
+
+            background-color: black;
+            color: white;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 90vh;
+            position: relative;
+        }
+
+        .card {
+            height: 40vh;
+            width: 45vw;
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 5px 4px 9px rgba(32, 32, 32, 0.54);
+            box-shadow: 0 4px 9px rgba(32, 32, 32, 0.54), 0 6px 10px rgb(0, 0, 0);
+        }
+
+        .card-item {
+            padding: 9px;
+            position: relative;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .text>:nth-child(1) {
+            font-size: 28px;
+            line-height: 58px;
+            font-family: 'Mulish', sans-serif;
+            font-weight: bold;
+            letter-spacing: 0px;
+            text-transform: capitalize;
+        }
+
+        .text>:nth-child(2) {
+            text-transform: capitalize;
+            font-size: 16px;
+            line-height: 35px;
+            font-weight: 500;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .text>:nth-child(3) {
+            font-size: 17px;
+            line-height: 26px;
+            font-weight: 300;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .buttom-button {
+            padding-left: 3px;
+            margin-top: 10px;
+        }
+
+        .buttom-button .button {
+            margin: 7px 0;
+            padding: 2px;
+            line-height: 30px;
+        }
+
+        .button span {
+            background-color: rgba(0, 0, 0, 0.448);
+            padding: 5px 10px;
+            border-radius: 10px;
+            color: black;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .button span:hover {
+            background-color: rgb(193, 161, 227);
+        }
+
+        .buttom-button>button {
+            margin-top: 8px;
+            cursor: pointer;
+            margin-right: 3px;
+        }
+
+        .btn {
+            padding: 10px 75px;
+            border: none;
+            border-radius: 9px;
+            background-color: rgba(0, 0, 0, 0.89);
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: rgb(45, 45, 45);
+        }
+
+        .btn-2 {
+            padding: 8px 6px;
+            border: 1px solid rgba(0, 0, 0, 0.849);
+            border-radius: 8px;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            background-color: transparent;
+        }
+
+        .btn-2 a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .btn-2:hover {
+            background-color: rgb(245, 245, 245);
+            text-decoration: underline;
+        }
+
+        .breck {
+            height: 4px;
+            background-color: rgba(0, 0, 0, 0.795);
+        }
+
+        @media screen and (max-width:1500px) {
+            .card {
+                width: max-content;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .card {
+                flex-direction: column;
+                height: max-content;
+                width: max-content;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-img">
+                <img width="280px"
+                    src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?w=826&t=st=1702211956~exp=1702212556~hmac=375b3ef048ee603b553d9cc285409b4a1074731523e3356b545a5f87dba9ef5e"
+                    alt="">
+            </div>
+            <div class="cart-item">
+                <div class="text">
+                    <span>Zack Wilson </span>
+                    <span>senior full-stack Developer in <a href="https://www.google.com/about/careers/applications/"
+                            target="_blank">Google</a></span>
+                    <span>Helping with :</span>
+                </div>
+                <div class="buttom-button">
+                    <div class="button">
+                        <span>Advance Css</span>
+                        <span>Javascript</span>
+                        <span>React.js</span>
+                    </div>
+                    <button class="btn">Book a lector</button>
+                    <button class="btn-2"><a href="#">learn More</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
